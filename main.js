@@ -95,7 +95,7 @@ const badResult = fetch(baseUrl + personEndPoint /* 4) */, {
     .catch((error) => {
         console.error('Error:', error);
     });
-
+	
 // Call to print a random character to console
 async function getNameToConsole() {
 	// 3)
