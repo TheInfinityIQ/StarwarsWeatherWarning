@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="styles.css" />
 		<title>Document</title>
 		<script src="main.js"></script>
 	</head>
 	<body>
 		<header>
-			<img src="Star_Wars_Logo..png" alt="" class="logo">
 			<nav>
+				<figure class="logo-container">
+					<img src="Star_Wars_Logo..png" alt="" class="logo" />
+					<figcaption><h1>News</h1></figcaption>
+				</figure>
 				<ul class="nav-links">
 					<li><a href="#main-feed">About</a></li>
 					<li><a href="#">News</a></li>
@@ -18,11 +21,47 @@
 					<li><a href="#">More</a></li>
 				</ul>
 			</nav>
-			<a class="cta" href="#"><button>Contact</button></a>
 		</header>
 		<main>
-			<section id="main-feed"></section>
+			<section id="main-feed">
+				<ul class="news-list">
+					<li class="news-list-article">
+						<article class="article-container">
+							<div class="article-header article-sub-container">
+								<h2>News Headline</h2>
+							</div>
+							<div class="article-post-info article-sub-container">
+								<i><p>dd/mm/yyyy</p></i>
+								<i><p>author: J. Doe</p></i>
+							</div>
+							<div class="article-news-post article-sub-container">
+								<hr>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo facilisis iaculis. In dapibus auctor mi nec ultricies. Nulla eu
+									scelerisque tortor, sed convallis nisi. Vivamus facilisis pellentesque rhoncus. Donec felis leo, lacinia eu lectus at, viverra lacinia sem.
+									Suspendisse vel lacus aliquet, ornare elit eu, venenatis est. Nunc eget velit in urna volutpat venenatis at nec felis. Mauris fermentum
+									quam in nunc faucibus auctor. Praesent egestas nulla sit amet sapien interdum, vitae convallis urna pellentesque. Aliquam nec massa
+									efficitur mi eleifend laoreet in eget nisl. Proin feugiat ipsum diam. Sed id metus porta, viverra enim quis, porttitor orci. Nulla vel nibh
+									nunc.
+								</p>
+								<br />
+								<p>
+									Curabitur velit lacus, aliquam at porta in, tempus ut orci. Quisque sed aliquet arcu. Mauris maximus ante vitae eros fermentum tincidunt.
+									Integer auctor suscipit dui sed congue. Vivamus pellentesque molestie tellus dignissim auctor. Donec facilisis convallis molestie. Ut ut
+									facilisis tellus. Ut non lacus in dui vehicula convallis. Nam tincidunt ante auctor quam feugiat, vitae aliquet magna ornare. Nullam
+									malesuada nec eros sit amet efficitur.
+								</p>
+							</div>
+							<hr />
+						</article>
+					</li>
+				</ul>
+			</section>
 		</main>
-		<footer id="more-info"></footer>
+		<footer id="more-info">
+			<a class="cta" href="#">
+				<!-- <button>Contact</button> -->
+			</a>
+		</footer>
 	</body>
 </html>
