@@ -112,3 +112,72 @@ button:hover {
 .main-quote {
     font-style: italic;
 }
+
+.news-list {
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+.news-list-article {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container {
+    width: 85%;
+    height: 100%;
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-container > * {
+    color: black;
+}
+
+.article-sub-container {
+    width: 100%;
+}
+
+.article-header {
+    background-color: lightgray;
+    width: 90%;
+    text-align: center;
+}
+
+.article-post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 515px) {
+    .logo-container figcaption {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    nav .logo-container {
+        padding: 5px 0;
+    }
+    nav h1 {
+        font-size: 16px;
+    }
+
+    nav li a {
+        font-size: 12px;
+    }
+}
+
+/* 
+    Used to keep image inside of it's container and make sure 'News' does slip being the buttons on the right. 
+    460px was a breakpoint where the problems started to occur
+
+    TODO: maybe find a way to make the nav buttons more distinguishable at smaller sizes. It would be hard to click on smaller screens.
+    Especially with a finger.
+*/
