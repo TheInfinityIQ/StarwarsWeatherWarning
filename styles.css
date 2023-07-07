@@ -155,7 +155,6 @@ button:hover {
     justify-content: space-between;
 }
 
-
 @media screen and (max-width: 515px) {
     .logo-container figcaption {
         align-self: center;
@@ -172,6 +171,12 @@ button:hover {
     nav li a {
         font-size: 12px;
     }
+}
+
+article {
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 0 15px;
 }
 
 /* 

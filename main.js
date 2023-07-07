@@ -136,3 +136,5 @@ console.log(getName()); // Prints Promise { <state>: "pending" } to console but 
 console.log(badResult); // Prints Promise { <state>: "pending" } to console but doesn't have a value inside of it meaning no response was received by the time the value was assigned and printed
 
 getNameToConsole(); //because we didn't return the fetch command and decided to tell the code dog to fetch right await, it will print the fulfilled promise to console as a string because we used JSON.stringify
+
+document.getElementById("template-one-peoplex-one").innerHTML = "";
